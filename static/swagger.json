@@ -1,0 +1,94 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+      "description": "sean",
+      "version": "1.0.0",
+      "title": "Seans-Python3-Flask-Rest-Boilerplate",
+      "license": {
+        "name": "MIT",
+        "url": "https://opensource.org/licenses/MIT"
+      }
+    },
+    "components": {
+        "schemas": {
+          "id": {
+            "properties": {
+              "id": {
+                "type": "string"
+              }
+            }
+          },
+          "USER_SCHEMA": {
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": "string",
+                "format": "string"
+              },
+              "username": {
+                "type": "string",
+                "format": "string"
+              },
+              "email": {
+                "type": "string",
+                "format": "email"
+              },
+              "phone": {
+                "type": "string",
+                "format": "string"
+              },
+              "street": {
+                "type": "string",
+                "format": "string"
+              },
+              "suite": {
+                "type": "string",
+                "format": "string"
+              },
+              "city": {
+                "type": "string",
+                "format": "string"
+              },
+              "zipcode": {
+                "type": "string",
+                "format": "string"
+              },
+              "companyname": {
+                "type": "string",
+                "format": "string"
+              },
+              "catchPhrase": {
+                "type": "string",
+                "format": "string"
+              },
+              "bs": {
+                "type": "string",
+                "format": "string"
+              },
+              "lat": {
+                "type": "string",
+                "format": "string"
+              },
+              "lng": {
+                "type": "string",
+                "format": "string"
+              }
+              
+              
+            }
+          },
+        
+          "bookRequests": {
+            "type": "object",
+            "properties": {
+              "bookRequest": {
+                "type": "object",
+                "additionalProperties": {
+                  "$ref": "#/components/schemas/bookRequest"
+                }
+              }
+            }
+          }
+        }
+    }
+}
